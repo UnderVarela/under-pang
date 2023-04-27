@@ -21,7 +21,7 @@ canvas.addEventListener('mousedown', function(event) {
   balls.forEach(function(ball, index) {
     if (mouseX >= ball.x - ball.radius && mouseX <= ball.x + ball.radius && mouseY >= ball.y - ball.radius && mouseY <= ball.y + ball.radius) {
       score++;
-      ball.radius = 20;
+      ball.radius = 30;
       ball.color = "red";
       setTimeout(function() {
         ball.radius = 10;
